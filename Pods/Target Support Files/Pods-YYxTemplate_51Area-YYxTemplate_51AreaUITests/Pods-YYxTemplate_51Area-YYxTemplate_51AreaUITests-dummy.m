@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests : NSObject
+@end
+@implementation PodsDummy_Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests
+@end

@@ -1,0 +1,6 @@
+framework module Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests {
+  umbrella header "Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
