@@ -17,6 +17,10 @@
 		6F421B3A2553B68000005240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F421B382553B68000005240 /* LaunchScreen.storyboard */; };
 		6F421B452553B68000005240 /* YYxTemplate_51AreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F421B442553B68000005240 /* YYxTemplate_51AreaTests.swift */; };
 		6F421B502553B68000005240 /* YYxTemplate_51AreaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F421B4F2553B68000005240 /* YYxTemplate_51AreaUITests.swift */; };
+		6F726529255A8F8A00489B47 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F726528255A8F8A00489B47 /* UIColor.swift */; };
+		6F72652C255A903900489B47 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72652B255A903900489B47 /* TemplateViewController.swift */; };
+		6F72652E255A924C00489B47 /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72652D255A924C00489B47 /* TemplateView.swift */; };
+		6F726530255A929400489B47 /* TemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72652F255A929400489B47 /* TemplateViewModel.swift */; };
 		CF4DFE11BE532AF17A67F22E /* Pods_YYxTemplate_51AreaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82812015D73181D378B87970 /* Pods_YYxTemplate_51AreaTests.framework */; };
 		EB24067E3736598174AB5C76 /* Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A410FE48BB31C6F33C3CC7 /* Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +63,10 @@
 		6F421B4B2553B68000005240 /* YYxTemplate_51AreaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYxTemplate_51AreaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F421B4F2553B68000005240 /* YYxTemplate_51AreaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxTemplate_51AreaUITests.swift; sourceTree = "<group>"; };
 		6F421B512553B68000005240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F726528255A8F8A00489B47 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6F72652B255A903900489B47 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		6F72652D255A924C00489B47 /* TemplateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
+		6F72652F255A929400489B47 /* TemplateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewModel.swift; sourceTree = "<group>"; };
 		82812015D73181D378B87970 /* Pods_YYxTemplate_51AreaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxTemplate_51AreaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BAA3EDBBC764746EDC35F0 /* Pods-YYxTemplate_51AreaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxTemplate_51AreaTests.release.xcconfig"; path = "Target Support Files/Pods-YYxTemplate_51AreaTests/Pods-YYxTemplate_51AreaTests.release.xcconfig"; sourceTree = "<group>"; };
 		A45DF08B520FEA139D6C2DBD /* Pods-YYxTemplate_51Area.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxTemplate_51Area.release.xcconfig"; path = "Target Support Files/Pods-YYxTemplate_51Area/Pods-YYxTemplate_51Area.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +136,8 @@
 		6F421B292553B67D00005240 /* YYxTemplate_51Area */ = {
 			isa = PBXGroup;
 			children = (
+				6F72652A255A900C00489B47 /* Template */,
+				6F726527255A8F6400489B47 /* UIKitExtension */,
 				6F421B2A2553B67D00005240 /* AppDelegate.swift */,
 				6F421B2C2553B67D00005240 /* SceneDelegate.swift */,
 				6F421B2E2553B67D00005240 /* ViewController.swift */,
@@ -156,6 +166,24 @@
 				6F421B512553B68000005240 /* Info.plist */,
 			);
 			path = YYxTemplate_51AreaUITests;
+			sourceTree = "<group>";
+		};
+		6F726527255A8F6400489B47 /* UIKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6F726528255A8F8A00489B47 /* UIColor.swift */,
+			);
+			path = UIKitExtension;
+			sourceTree = "<group>";
+		};
+		6F72652A255A900C00489B47 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				6F72652B255A903900489B47 /* TemplateViewController.swift */,
+				6F72652F255A929400489B47 /* TemplateViewModel.swift */,
+				6F72652D255A924C00489B47 /* TemplateView.swift */,
+			);
+			path = Template;
 			sourceTree = "<group>";
 		};
 		84A4EE5AA4491DF775A36B6B /* Pods */ = {
@@ -412,8 +440,12 @@
 			files = (
 				6F421B2F2553B67D00005240 /* ViewController.swift in Sources */,
 				6F421B2B2553B67D00005240 /* AppDelegate.swift in Sources */,
+				6F726530255A929400489B47 /* TemplateViewModel.swift in Sources */,
+				6F72652C255A903900489B47 /* TemplateViewController.swift in Sources */,
+				6F72652E255A924C00489B47 /* TemplateView.swift in Sources */,
 				6F421B2D2553B67D00005240 /* SceneDelegate.swift in Sources */,
 				6F421B352553B67D00005240 /* YYxTemplate_51Area.xcdatamodeld in Sources */,
+				6F726529255A8F8A00489B47 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
