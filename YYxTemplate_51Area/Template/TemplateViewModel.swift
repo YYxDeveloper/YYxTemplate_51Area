@@ -10,9 +10,10 @@ import Foundation
 
 extension TemplateViewController{
     /*
-     所有VM創建都是VC(最上層)，sub custom view 也依賴VC的ViewModel或是寫一個adapter
+     1.所有VM創建都是VC(最上層)，sub custom view 也依賴VC的ViewModel或是寫一個adapter
+     2.viewModel 命名原則 custom class name + functionalModelName
      **/
-    class TemplateIDSystemViewModel {
+    class TemplateSubViewIDSystemModel {
         
     }
     class TemplateAccountViewModel {
