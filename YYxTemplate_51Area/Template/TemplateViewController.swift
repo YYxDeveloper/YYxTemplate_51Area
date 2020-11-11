@@ -7,10 +7,16 @@
 //
 
 import UIKit
-
+/**
+ 1. 屬性，生命週期，方法，用extension分開
+ 2. view & model 屬性用MARK separate
+ */
 class TemplateViewController: UIViewController {
 
-     lazy var tableView:UITableView = {
+    var templateSubViewIDSystemModel:TemplateSubViewIDSystemModel?
+    
+    // MARK: - SubViews
+    lazy var tableView:UITableView = {
                let tableView = UITableView(frame: .zero, style: .grouped)
                tableView.translatesAutoresizingMaskIntoConstraints = false
                tableView.backgroundColor = UIColor(gray: 244)
@@ -22,9 +28,17 @@ class TemplateViewController: UIViewController {
                 
                return tableView
            }()
+   
+}
+extension TemplateViewController{
     override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .yellow
-        // Do any additional setup after loading the view.
+           super.viewDidLoad()
+           view.backgroundColor = .yellow
+           // Do any additional setup after loading the view.
+       }
+}
+extension TemplateViewController{
+    func mountTemplateSubViewIDSystemModel(viewModel:TemplateSubViewIDSystemModel) {
+        templateSubViewIDSystemModel = viewModel
     }
 }
