@@ -10,10 +10,13 @@ import UIKit
 /**
  1. 屬性，生命週期，方法，用extension分開
  2. view & model 屬性用MARK separate
+ 3. 基本架構：
+    ViewModels -> ModelManger -> Model
+ 4.每個階層用資料夾區隔
  */
 class TemplateViewController: UIViewController {
 
-    var templateSubViewIDSystemModel:TemplateSubViewIDSystemModel?
+    var iDSystemModelManger:Fake_IDSystemModelManger?
     
     // MARK: - SubViews
     lazy var tableView:UITableView = {
@@ -38,7 +41,7 @@ extension TemplateViewController{
        }
 }
 extension TemplateViewController{
-    func mountTemplateSubViewIDSystemModel(viewModel:TemplateSubViewIDSystemModel) {
-        templateSubViewIDSystemModel = viewModel
+    func mountTemplateSubViewIDSystemModel(modelManger:Fake_IDSystemModelManger) {
+        iDSystemModelManger = modelManger
     }
 }
