@@ -56,8 +56,3 @@ extension TemplateViewController.TemplateViewModel:TemplateSubViewCommandProtoco
         print("view傳過來的互動指令")
     }
 }
-
-
-
-extension TemplateViewController.TemplateSubView{
-}
