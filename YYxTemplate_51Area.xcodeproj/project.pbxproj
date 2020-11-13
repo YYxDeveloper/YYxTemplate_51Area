@@ -10,6 +10,8 @@
 		30FEEE0E3E71151E5A2EC86B /* Pods_YYxTemplate_51Area.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD21B1DBDE69F2D108D159E /* Pods_YYxTemplate_51Area.framework */; };
 		4790C918255E52AD00E93854 /* TemplateModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4790C917255E52AD00E93854 /* TemplateModelManager.swift */; };
 		4790C92B255E53CE00E93854 /* Fake_IDSystemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4790C92A255E53CE00E93854 /* Fake_IDSystemModels.swift */; };
+		4790C944255E5D1400E93854 /* TemplateTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4790C943255E5D1400E93854 /* TemplateTableViewDelegate.swift */; };
+		4790C94A255E603600E93854 /* TemplateCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4790C949255E603600E93854 /* TemplateCollectionViewDelegate.swift */; };
 		6F421B2B2553B67D00005240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F421B2A2553B67D00005240 /* AppDelegate.swift */; };
 		6F421B2D2553B67D00005240 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F421B2C2553B67D00005240 /* SceneDelegate.swift */; };
 		6F421B2F2553B67D00005240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F421B2E2553B67D00005240 /* ViewController.swift */; };
@@ -50,6 +52,8 @@
 		460928ACAF4DAEA96B4DBDB0 /* Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.release.xcconfig"; path = "Target Support Files/Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests/Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4790C917255E52AD00E93854 /* TemplateModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateModelManager.swift; sourceTree = "<group>"; };
 		4790C92A255E53CE00E93854 /* Fake_IDSystemModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fake_IDSystemModels.swift; sourceTree = "<group>"; };
+		4790C943255E5D1400E93854 /* TemplateTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTableViewDelegate.swift; sourceTree = "<group>"; };
+		4790C949255E603600E93854 /* TemplateCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		645DB4F585B99EE4FB373804 /* Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.debug.xcconfig"; path = "Target Support Files/Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests/Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		66F60842DD317FE90E4455E3 /* Pods-YYxTemplate_51AreaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxTemplate_51AreaTests.debug.xcconfig"; path = "Target Support Files/Pods-YYxTemplate_51AreaTests/Pods-YYxTemplate_51AreaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F421B272553B67D00005240 /* YYxTemplate_51Area.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYxTemplate_51Area.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +143,22 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		4790C942255E5D0200E93854 /* UITableViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4790C943255E5D1400E93854 /* TemplateTableViewDelegate.swift */,
+			);
+			path = UITableViewDelegate;
+			sourceTree = "<group>";
+		};
+		4790C948255E601A00E93854 /* UICollectionViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4790C949255E603600E93854 /* TemplateCollectionViewDelegate.swift */,
+			);
+			path = UICollectionViewDelegate;
+			sourceTree = "<group>";
+		};
 		6F421B1E2553B67D00005240 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +229,8 @@
 			children = (
 				6F72652B255A903900489B47 /* TemplateViewController.swift */,
 				6F72652D255A924C00489B47 /* TemplateSubView.swift */,
+				4790C948255E601A00E93854 /* UICollectionViewDelegate */,
+				4790C942255E5D0200E93854 /* UITableViewDelegate */,
 				4790C93E255E57C000E93854 /* ViewModels */,
 				4790C932255E574400E93854 /* ModelMangers */,
 				4790C929255E53B900E93854 /* Models */,
@@ -477,6 +499,8 @@
 				4790C92B255E53CE00E93854 /* Fake_IDSystemModels.swift in Sources */,
 				6F421B2D2553B67D00005240 /* SceneDelegate.swift in Sources */,
 				6F421B352553B67D00005240 /* YYxTemplate_51Area.xcdatamodeld in Sources */,
+				4790C94A255E603600E93854 /* TemplateCollectionViewDelegate.swift in Sources */,
+				4790C944255E5D1400E93854 /* TemplateTableViewDelegate.swift in Sources */,
 				6F726529255A8F8A00489B47 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
