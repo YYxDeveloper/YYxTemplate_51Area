@@ -13,22 +13,22 @@ import Foundation
  2. open property  in extra extension block
  */
 class Fake_IDSystemModelManger {
-    private var dataModels:[DataModel]
+    private var dataModels:[MemberIDDataModel]
     
     init() {
         dataModels = Fake_IDSystemModelManger.requestData()
     }
-    private static func requestData() -> [DataModel] {
-        return  [DataModel(name: "呂楊", AreaCode: "F", numberCode: 117148498)]
+    private static func requestData() -> [MemberIDDataModel] {
+        return  [MemberIDDataModel(name: "呂楊", AreaCode: "F", numberCode: 117148498)]
     }
     
 }
 extension Fake_IDSystemModelManger{
     var howManyPeople:Int{return dataModels.count}
-    func pickNewestData() -> [DataModel] {
+    func bringNewestData() -> [MemberIDDataModel] {
         return dataModels
     }
-    func updateData(newestData:[DataModel]) {
+    func updateData(newestData:[MemberIDDataModel]) {
         dataModels = newestData
     }
 }

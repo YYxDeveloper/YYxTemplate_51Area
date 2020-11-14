@@ -8,7 +8,7 @@
 
 import Foundation
 extension Fake_IDSystemModelManger{
-    struct DataModel {
+    struct MemberIDDataModel {
         let name:String
         let AreaCode:String
         let numberCode:Int

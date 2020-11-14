@@ -16,7 +16,8 @@ import UIKit
  */
 class TemplateViewController: UIViewController {
     
-    var iDSystemModelManger:Fake_IDSystemModelManger?
+     var viewModel:TemplateSubViewIDSystemModel?
+     var templateAccountViewModel:TemplateAccountViewModel?
     
     // MARK: - SubViews
     lazy var tableView:UITableView = {
@@ -38,25 +39,6 @@ extension TemplateViewController{
         super.viewDidLoad()
         view.backgroundColor = .yellow
         // Do any additional setup after loading the view.
+        regulateThisView()
     }
-}
-extension TemplateViewController{
-    func mountTemplateSubViewIDSystemModel(modelManger:Fake_IDSystemModelManger) {
-        iDSystemModelManger = modelManger
-    }
-}
-extension TemplateViewController:YYxSubViewPrinciple{
-    func addSubViews() {
-        
-    }
-    
-    func layoutSubViews() {
-        
-    }
-    
-    func settingThisView() {
-        
-    }
-    
-    
 }

@@ -31,3 +31,14 @@ extension TemplateViewController{
         
     }
 }
+extension TemplateViewController.TemplateSubViewIDSystemModel{
+    func bringEachtableViewCellDataModel(indexPath:IndexPath) -> TemplateTableViewCell.MemberModel {
+        
+        var each = iDSystemModelManger.bringNewestData()[indexPath.row]
+        
+        return TemplateTableViewCell.MemberModel(memberName: each.name, meberID: each.idCode)
+    }
+}
+extension TemplateViewController.TemplateAccountViewModel{
+    
+}

@@ -8,32 +8,24 @@
 
 import Foundation
 import UIKit
- protocol YYxSubViewPrinciple {
-    func addSubViews()
-    func layoutSubViews()
+protocol YYxSubViewInformalPrinciple {
+    func regulateThisView()
+    func addThisSubViews()
+    func layoutThisSubViews()
     func settingThisView()
+    func refreshThisView()
 }
- protocol TemplateSubViewCommandProtocol {
+protocol TemplateSubViewCommandProtocol {
     func callCommand1()
 }
+
 extension TemplateViewController{
-    class TemplateSubView: UIView,YYxSubViewPrinciple {
+    class TemplateSubView: UIView {
         //        var viewModel:YYxTemplateViewModel?
         var commadDelegate:TemplateSubViewCommandProtocol?
         override init(frame: CGRect) {
             super.init(frame: frame)
-            settingThisView()
-            addSubViews()
-            layoutSubViews()
-        }
-        func addSubViews(){
-            
-        }
-        func layoutSubViews(){
-            
-        }
-        func settingThisView(){
-            
+            regulateThisView()
         }
         required init?(coder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
