@@ -12,9 +12,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let t = TemplateViewController()
-        addChild(t)
-        view.addSubview(t.view)
+//        let t = TemplateViewController()
+//        addChild(t)
+//        view.addSubview(t.view)
+        let indicateCollectionView = IndicateCollectionView()
+
+        view.addSubview(indicateCollectionView)
+        
+        indicateCollectionView.snp.makeConstraints({make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin)
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(50)
+        })
+        
+        
+        view.backgroundColor = .red
     }
 
 

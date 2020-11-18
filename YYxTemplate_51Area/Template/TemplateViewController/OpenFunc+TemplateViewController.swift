@@ -14,5 +14,9 @@ extension TemplateViewController{
     func mountTemplateAccountViewModel(){
         templateAccountViewModel = TemplateAccountViewModel()
     }
+    
+    func refreshThisView() {
+        
+    }
 }
 

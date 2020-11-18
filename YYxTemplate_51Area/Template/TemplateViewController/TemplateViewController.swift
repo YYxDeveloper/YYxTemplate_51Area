@@ -32,7 +32,17 @@ class TemplateViewController: UIViewController {
         
         return tableView
     }()
-    
+    lazy var collectionView:UICollectionView = {
+        let flowLayout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: CGRect(), collectionViewLayout:YJCollectionViewHorizontalLineLayout())
+        
+        collectionView.delegate=self
+        collectionView.dataSource=self
+//        collectionView.register(AnyComplexUnitViewCollectionViewCell.self, forCellWithReuseIdentifier: "AnyComplexUnitViewCollectionViewCell")
+        collectionView.contentInset = UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
+        
+        return collectionView
+    }()
 }
 extension TemplateViewController{
     override func viewDidLoad() {
@@ -41,4 +51,25 @@ extension TemplateViewController{
         // Do any additional setup after loading the view.
         regulateThisView()
     }
+}
+extension TemplateViewController{
+    private func regulateThisView() {
+        settingThisView()
+        addThisSubViews()
+        layoutThisSubViews()
+    }
+    
+    private func addThisSubViews() {
+        
+    }
+    
+    private func layoutThisSubViews() {
+        
+    }
+    
+    private func settingThisView() {
+        
+    }
+    
+    
 }

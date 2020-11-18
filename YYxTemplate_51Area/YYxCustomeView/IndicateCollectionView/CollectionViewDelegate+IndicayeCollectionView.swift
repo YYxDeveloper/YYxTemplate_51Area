@@ -1,14 +1,14 @@
 //
-//  TemplateCollectionViewDelegate.swift
+//  CollectionViewDelegate+IndicayeCollectionView.swift
 //  YYxTemplate_51Area
 //
-//  Created by 呂子揚 on 2020/11/13.
+//  Created by 呂子揚 on 2020/11/18.
 //  Copyright © 2020 young. All rights reserved.
 //
 
 import Foundation
 import UIKit
-extension TemplateViewController:UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
+extension IndicateCollectionView:UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
     var templateFlowLayout:UICollectionViewFlowLayout{
         let flowLayout = UICollectionViewFlowLayout()
         
@@ -19,6 +19,7 @@ extension TemplateViewController:UICollectionViewDataSource,UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IndicateCollectionVeiwCell", for: indexPath) as?  IndicateCollectionVeiwCell else {return UICollectionViewCell()}
         
         

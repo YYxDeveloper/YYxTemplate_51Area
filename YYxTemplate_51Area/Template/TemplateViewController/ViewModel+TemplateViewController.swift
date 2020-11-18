@@ -14,7 +14,7 @@ extension TemplateViewController{
      2.viewModel 命名原則 custom class name + functionalModelName
      **/
     class TemplateSubViewIDSystemModel {
-        let iDSystemModelManger = Fake_IDSystemModelManger()
+        let iDSystemModelManger = Fake_IDSystemModelShepherd()
         
     }
     class TemplateAccountViewModel {

@@ -8,22 +8,9 @@
 
 import Foundation
 import UIKit
-extension TemplateViewController.TemplateSubView:YYxSubViewInformalPrinciple{
-    func regulateThisView() {
-        settingThisView()
-        addThisSubViews()
-        layoutThisSubViews()
-    }
-    func addThisSubViews(){
-        
-    }
+extension TemplateViewController.TemplateSubView{
+    
     func layoutThisSubViews(){
-        
-    }
-    func settingThisView(){
-        
-    }
-    func refreshThisView() {
         
     }
 }

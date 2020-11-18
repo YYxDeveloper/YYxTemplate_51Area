@@ -31,9 +31,17 @@ extension TemplateViewController{
             fatalError("init(coder:) has not been implemented")
         }
         
-        func refreshSubViews() {
-            guard let commadDelegate = commadDelegate else {return}
-            commadDelegate.callCommand1()
+       
+        private func regulateThisView() {
+            settingThisView()
+            addThisSubViews()
+            layoutThisSubViews()
+        }
+        private func addThisSubViews(){
+            
+        }
+        private func settingThisView(){
+            
         }
         
     }

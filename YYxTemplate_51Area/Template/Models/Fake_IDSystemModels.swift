@@ -7,7 +7,7 @@
 //
 
 import Foundation
-extension Fake_IDSystemModelManger{
+extension Fake_IDSystemModelShepherd{
     struct MemberIDDataModel {
         let name:String
         let AreaCode:String

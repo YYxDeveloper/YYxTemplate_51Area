@@ -12,18 +12,18 @@ import Foundation
  1. 不要直接訪望屬性，不然一多很難找，單一進出原則
  2. open property  in extra extension block
  */
-class Fake_IDSystemModelManger {
+class Fake_IDSystemModelShepherd {
     private var dataModels:[MemberIDDataModel]
     
     init() {
-        dataModels = Fake_IDSystemModelManger.requestData()
+        dataModels = Fake_IDSystemModelShepherd.requestData()
     }
     private static func requestData() -> [MemberIDDataModel] {
         return  [MemberIDDataModel(name: "呂楊", AreaCode: "F", numberCode: 117148498)]
     }
     
 }
-extension Fake_IDSystemModelManger{
+extension Fake_IDSystemModelShepherd{
     var howManyPeople:Int{return dataModels.count}
     func bringNewestData() -> [MemberIDDataModel] {
         return dataModels
