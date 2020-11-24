@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 extension IndicateCollectionView{
-    func refreshThisView() {
-        
+    func refreshThisView(newCellSize:CGSize) {
+        IndicateCollectionView.StateModel.cellSize = newCellSize
+        collectionView.reloadData()
     }
 }

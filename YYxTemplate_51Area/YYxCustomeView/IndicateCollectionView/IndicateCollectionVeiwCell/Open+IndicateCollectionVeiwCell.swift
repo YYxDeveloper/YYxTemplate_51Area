@@ -10,8 +10,13 @@ import Foundation
 import UIKit
 
 extension IndicateCollectionVeiwCell{
-    func refreshThisView() {
-        
+    func refreshThisView(cellSize:CGSize) {
+        label.snp.remakeConstraints({make in
+            make.top.leading.trailing.equalToSuperview()
+            make.height.equalTo(cellSize.height)
+            make.width.equalTo(cellSize.width)
+
+        })
     }
 }
 

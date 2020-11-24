@@ -10,16 +10,31 @@ import Foundation
 import UIKit
 import SnapKit
 class IndicateCollectionView: UIView {
-    private lazy var collectionView:UICollectionView = {
+    
+    private var stateModel:StateModel = StateModel()
+     lazy var collectionView:UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        flowLayout.estimatedItemSize = IndicateCollectionView.StateModel.cellSize
+        flowLayout.scrollDirection = .horizontal
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.delegate=self
         collectionView.dataSource=self
         collectionView.register(IndicateCollectionVeiwCell.self, forCellWithReuseIdentifier: "IndicateCollectionVeiwCell")
-        collectionView.contentInset = UIEdgeInsets(top: 5, left: 10, bottom: 0, right: 10)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
+
         collectionView.backgroundColor = .gray
+        
         return collectionView
     }()
+    private lazy var indicateBar:UIView = {
+        let view = UIView()
+        view.backgroundColor = .yellow
+        
+        return view
+    }()
+   
     override init(frame: CGRect) {
         super.init(frame: frame)
         regulateThisView()
@@ -40,11 +55,18 @@ class IndicateCollectionView: UIView {
     private func layoutThisSubViews() {
         collectionView.snp.makeConstraints{make in
             make.top.leading.trailing.equalToSuperview()
-            make.height.equalTo(40)
+            make.bottom.equalToSuperview().offset(-stateModel.barHeight)
             
         }
     }
     private func settingThisView() {
         backgroundColor = .green
+    }
+}
+extension IndicateCollectionView{
+    // View 之間有交互的數值
+    struct StateModel {
+        static var cellSize = CGSize(width: 40, height: 40)
+        let barHeight = 10
     }
 }

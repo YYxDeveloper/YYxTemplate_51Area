@@ -34,7 +34,7 @@ class TemplateViewController: UIViewController {
     }()
     lazy var collectionView:UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: CGRect(), collectionViewLayout:YJCollectionViewHorizontalLineLayout())
+        let collectionView = UICollectionView(frame: CGRect(), collectionViewLayout:flowLayout)
         
         collectionView.delegate=self
         collectionView.dataSource=self
