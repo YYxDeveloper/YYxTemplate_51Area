@@ -13,4 +13,8 @@ extension IndicateCollectionView{
         IndicateCollectionView.StateModel.cellSize = newCellSize
         collectionView.reloadData()
     }
+    func exampleRefreshThisView() {
+        let size = CGSize(width: 66, height: 88)
+        refreshThisView(newCellSize: size)
+    }
 }

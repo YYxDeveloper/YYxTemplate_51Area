@@ -11,24 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .red
         // Do any additional setup after loading the view.
 //        let t = TemplateViewController()
 //        addChild(t)
 //        view.addSubview(t.view)
-        let indicateCollectionView = IndicateCollectionView()
-
-        view.addSubview(indicateCollectionView)
-        
-        indicateCollectionView.snp.makeConstraints({make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin)
-            make.leading.trailing.equalToSuperview()
-            make.height.equalTo(100)
-        })
-//        let size = CGSize(width: 66, height: 88)
-//
-//        indicateCollectionView.refreshThisView(newCellSize: size)
-        
-        view.backgroundColor = .red
+       
+        example_IndicateCollectionView()
     }
 
 

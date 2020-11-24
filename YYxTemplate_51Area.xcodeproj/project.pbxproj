@@ -35,6 +35,7 @@
 		6F72652C255A903900489B47 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72652B255A903900489B47 /* TemplateViewController.swift */; };
 		6F72652E255A924C00489B47 /* TemplateSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72652D255A924C00489B47 /* TemplateSubView.swift */; };
 		6F726530255A929400489B47 /* ViewModel+TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72652F255A929400489B47 /* ViewModel+TemplateViewController.swift */; };
+		6FB2FB8B256D0F7100ED40C6 /* Ex+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB2FB8A256D0F7100ED40C6 /* Ex+ViewController.swift */; };
 		CF4DFE11BE532AF17A67F22E /* Pods_YYxTemplate_51AreaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82812015D73181D378B87970 /* Pods_YYxTemplate_51AreaTests.framework */; };
 		EB24067E3736598174AB5C76 /* Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A410FE48BB31C6F33C3CC7 /* Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		6F72652B255A903900489B47 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		6F72652D255A924C00489B47 /* TemplateSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateSubView.swift; sourceTree = "<group>"; };
 		6F72652F255A929400489B47 /* ViewModel+TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+TemplateViewController.swift"; sourceTree = "<group>"; };
+		6FB2FB8A256D0F7100ED40C6 /* Ex+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+ViewController.swift"; sourceTree = "<group>"; };
 		82812015D73181D378B87970 /* Pods_YYxTemplate_51AreaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxTemplate_51AreaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BAA3EDBBC764746EDC35F0 /* Pods-YYxTemplate_51AreaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxTemplate_51AreaTests.release.xcconfig"; path = "Target Support Files/Pods-YYxTemplate_51AreaTests/Pods-YYxTemplate_51AreaTests.release.xcconfig"; sourceTree = "<group>"; };
 		A45DF08B520FEA139D6C2DBD /* Pods-YYxTemplate_51Area.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxTemplate_51Area.release.xcconfig"; path = "Target Support Files/Pods-YYxTemplate_51Area/Pods-YYxTemplate_51Area.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				6F421B2A2553B67D00005240 /* AppDelegate.swift */,
 				6F421B2C2553B67D00005240 /* SceneDelegate.swift */,
 				6F421B2E2553B67D00005240 /* ViewController.swift */,
+				6FB2FB86256D0F3200ED40C6 /* Ex+ViewController */,
 				6F421B302553B67D00005240 /* Main.storyboard */,
 				6F421B362553B68000005240 /* Assets.xcassets */,
 				6F421B382553B68000005240 /* LaunchScreen.storyboard */,
@@ -306,6 +309,14 @@
 				4790C929255E53B900E93854 /* Models */,
 			);
 			path = Template;
+			sourceTree = "<group>";
+		};
+		6FB2FB86256D0F3200ED40C6 /* Ex+ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6FB2FB8A256D0F7100ED40C6 /* Ex+ViewController.swift */,
+			);
+			path = "Ex+ViewController";
 			sourceTree = "<group>";
 		};
 		84A4EE5AA4491DF775A36B6B /* Pods */ = {
@@ -581,6 +592,7 @@
 				474EB30125653DB900CD7B0B /* Open+IndicateCollectionView.swift in Sources */,
 				4790C94A255E603600E93854 /* TemplateCollectionViewDelegate.swift in Sources */,
 				6F726529255A8F8A00489B47 /* UIColor.swift in Sources */,
+				6FB2FB8B256D0F7100ED40C6 /* Ex+ViewController.swift in Sources */,
 				474EB323256542FA00CD7B0B /* CollectionViewDelegate+IndicayeCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
