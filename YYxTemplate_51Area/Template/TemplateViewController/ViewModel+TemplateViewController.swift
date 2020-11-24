@@ -7,7 +7,11 @@
 //
 
 import Foundation
-
+extension TemplateViewController{
+    class TemplateViewModel {
+        
+    }
+}
 extension TemplateViewController{
     /*
      1.所有VM創建都是VC(最上層)，sub custom view 也依賴VC的ViewModel或是寫一個adapter
@@ -41,4 +45,9 @@ extension TemplateViewController.TemplateSubViewIDSystemModel{
 }
 extension TemplateViewController.TemplateAccountViewModel{
     
+}
+extension TemplateViewController.TemplateViewModel:TemplateSubViewCommandProtocol{
+    func callCommand1() {
+        print("view傳過來的互動指令")
+    }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30FEEE0E3E71151E5A2EC86B /* Pods_YYxTemplate_51Area.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD21B1DBDE69F2D108D159E /* Pods_YYxTemplate_51Area.framework */; };
-		473B4474255FCD9200F529E6 /* Layout+TemplateSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473B4473255FCD9200F529E6 /* Layout+TemplateSubView.swift */; };
 		473B4490255FD05400F529E6 /* OpenFunc+TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473B448F255FD05400F529E6 /* OpenFunc+TemplateViewController.swift */; };
 		474EB2F625653ADA00CD7B0B /* IndicateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474EB2F525653ADA00CD7B0B /* IndicateCollectionView.swift */; };
 		474EB30125653DB900CD7B0B /* Open+IndicateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474EB30025653DB900CD7B0B /* Open+IndicateCollectionView.swift */; };
@@ -63,7 +62,6 @@
 		0FD21B1DBDE69F2D108D159E /* Pods_YYxTemplate_51Area.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxTemplate_51Area.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A410FE48BB31C6F33C3CC7 /* Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxTemplate_51Area_YYxTemplate_51AreaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		460928ACAF4DAEA96B4DBDB0 /* Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.release.xcconfig"; path = "Target Support Files/Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests/Pods-YYxTemplate_51Area-YYxTemplate_51AreaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		473B4473255FCD9200F529E6 /* Layout+TemplateSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout+TemplateSubView.swift"; sourceTree = "<group>"; };
 		473B448F255FD05400F529E6 /* OpenFunc+TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenFunc+TemplateViewController.swift"; sourceTree = "<group>"; };
 		474EB2F525653ADA00CD7B0B /* IndicateCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateCollectionView.swift; sourceTree = "<group>"; };
 		474EB30025653DB900CD7B0B /* Open+IndicateCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Open+IndicateCollectionView.swift"; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				6F72652D255A924C00489B47 /* TemplateSubView.swift */,
-				473B4473255FCD9200F529E6 /* Layout+TemplateSubView.swift */,
 				474EB31D256541B200CD7B0B /* Open+TemplateSubView.swift */,
 			);
 			path = TemplateSubView;
@@ -398,7 +395,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = young;
 				TargetAttributes = {
 					6F421B262553B67D00005240 = {
@@ -591,7 +588,6 @@
 				474EB3112565408200CD7B0B /* Layout+IndicateCollectionVeiwCell.swift in Sources */,
 				4790C94A255E603600E93854 /* TemplateCollectionViewDelegate.swift in Sources */,
 				474EB30625653E5600CD7B0B /* YJCollectionViewHorizontalLineLayout.swift in Sources */,
-				473B4474255FCD9200F529E6 /* Layout+TemplateSubView.swift in Sources */,
 				6F726529255A8F8A00489B47 /* UIColor.swift in Sources */,
 				474EB323256542FA00CD7B0B /* CollectionViewDelegate+IndicayeCollectionView.swift in Sources */,
 			);
@@ -674,6 +670,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -734,6 +731,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

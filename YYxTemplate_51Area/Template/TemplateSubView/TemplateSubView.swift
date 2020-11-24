@@ -43,16 +43,9 @@ extension TemplateViewController{
         private func settingThisView(){
             
         }
+        private func layoutThisSubViews(){
+            
+        }
         
-    }
-}
-extension TemplateViewController{
-    class TemplateViewModel {
-        
-    }
-}
-extension TemplateViewController.TemplateViewModel:TemplateSubViewCommandProtocol{
-    func callCommand1() {
-        print("view傳過來的互動指令")
     }
 }
